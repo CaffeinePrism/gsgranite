@@ -63,4 +63,3 @@ $("#disclaimer > h2").click(function() {
 	var text = $("#disclaimer p").is(":visible") ? '[hide]' : '[show]';
 	$('#toggler').text(text);
 });
-$("body").prepend("<div id='note'>TO DEAR LEADER: Resize the browser window for more fun!</div>");
