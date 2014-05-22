@@ -1,8 +1,7 @@
 function initialize() {
 	var gsgranite = new google.maps.LatLng(37.660666, -122.115809);
 	var center = new google.maps.LatLng(37.66200, -122.11700);
-	var homedepot = new google.maps.LatLng(37.6633357, -122.1184911)
-	var marker;
+	var homedepot = new google.maps.LatLng(37.6633357, -122.1184911);
 	var bounds = new google.maps.LatLngBounds();
 	bounds.extend(gsgranite);
 	bounds.extend(homedepot);
@@ -33,6 +32,7 @@ function initialize() {
 	google.maps.event.addListener(marker, 'click', function() {
 		infowindow.open(map,marker);
 	});
+    infowindow.open(map,marker);
     map.fitBounds(bounds);
 }
 function loadmaps() {
